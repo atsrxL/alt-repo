@@ -19,6 +19,15 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.9.1",
+          "buildVersion": "9",
+          "date": "2026-11-06",
+          "localizedDescription": "支持中断传输从首个缺失的已校验块恢复；同时显示可达的内外网通道；在线状态增加 20 秒去抖，桌面标题栏显示传输速率并隐藏低于 10 KB/s 的速率。文本条目不再显示下载完成标记。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.9.1/Scatter.ipa",
+          "size": 4865231,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.9.0",
           "buildVersion": "8",
           "date": "2026-11-06",
@@ -99,11 +108,11 @@
           "NSLocalNetworkUsageDescription": "连接你的 Scatter 服务器以同步加密的笔记和文件。"
         }
       },
-      "version": "0.9.0",
+      "version": "0.9.1",
       "versionDate": "2026-11-06",
-      "versionDescription": "统一账号制与共享核心行为；升级仅保留已验证且已登录的 0.8.0 账号资料库，需要时请重新登录。改进内外网故障切换、下载进度与取消、剪贴板去重；分享扩展支持后台或关闭主应用后暂存，由核心校验并原子导入。",
-      "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.9.0/Scatter.ipa",
-      "size": 4814424
+      "versionDescription": "支持中断传输从首个缺失的已校验块恢复；同时显示可达的内外网通道；在线状态增加 20 秒去抖，桌面标题栏显示传输速率并隐藏低于 10 KB/s 的速率。文本条目不再显示下载完成标记。",
+      "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.9.1/Scatter.ipa",
+      "size": 4865231
     },
     {
       "name": "SendIt",
