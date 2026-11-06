@@ -1,0 +1,245 @@
+{
+  "name": "atsrxL Apps",
+  "identifier": "com.atsrxl.altrepo",
+  "subtitle": "个人 iOS / iPadOS 应用合集",
+  "description": "Scatter、SendIt、F50 Manager 与映流 FlowStream 的统一公开分发源。",
+  "website": "https://github.com/atsrxL/alt-repo",
+  "iconURL": "https://raw.githubusercontent.com/atsrxL/scatter-altstore/main/altstore/icon.png",
+  "tintColor": "7564CF",
+  "apps": [
+    {
+      "name": "Scatter",
+      "bundleIdentifier": "to.scatter.ios",
+      "developerName": "atsrxl",
+      "subtitle": "在设备之间同步文字、链接、图片与文件",
+      "localizedDescription": "连接你自己的 Scatter 服务器，所有内容在设备上端到端加密后经服务器中转，服务器解不开内容。\n\n• 填写内外网地址与账号，测试连接自动核验服务器身份后登录\n• 登录后只读显示账号与服务器，不同账号使用独立资料库\n• 收件箱、归档、回收站、标签与搜索\n• 文字笔记、文件、相册、剪贴板导入\n• 分享扩展：从任意 App 分享到 Scatter\n• 其他设备离线时也能从服务器缓存取回文件\n\niOS 版全部走服务器中转，不做局域网直连。",
+      "iconURL": "https://raw.githubusercontent.com/atsrxL/scatter-altstore/main/altstore/icon.png",
+      "tintColor": "#7564CF",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.8.0",
+          "buildVersion": "7",
+          "date": "2026-11-05",
+          "localizedDescription": "统一内网/外网地址与账号完整登录界面；测试连接自动固定服务器身份，登录后只读显示绑定信息，切换账号保留原资料库。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.8.0/Scatter.ipa",
+          "size": 3967275,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.7.4",
+          "buildVersion": "6",
+          "date": "2026-11-05",
+          "localizedDescription": "恢复文本图标，新增图片缩略图，修正内网服务器被标成公网的连接状态。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.7.4/Scatter.ipa",
+          "size": 3857593,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.7.3",
+          "buildVersion": "5",
+          "date": "2026-11-05",
+          "localizedDescription": "按日期折叠剪贴板；显示连接设备和传输速度；点按复制文本、缩放图片或打开文件。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.7.3/Scatter.ipa",
+          "size": 3821056,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.7.1",
+          "buildVersion": "4",
+          "date": "2026-11-05",
+          "localizedDescription": "新增进入应用时自动读取剪贴板开关，以及前台收到其他设备文本剪贴板时的通知。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.7.1/Scatter.ipa",
+          "size": 3754660,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.7.0",
+          "buildVersion": "3",
+          "date": "2026-11-05",
+          "localizedDescription": "移除旧协议兼容；轻点文本直接复制，精简默认分组。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.7.0/Scatter.ipa",
+          "size": 3824180,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.6.1",
+          "buildVersion": "2",
+          "date": "2026-11-05",
+          "localizedDescription": "修复重签后提示 App Group 不可用：优先读取 AltStore/SideStore 写入的 ALTAppGroups；证书不支持 App Group 时主 App 照常使用，仅分享扩展不可用。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.6.1/Scatter.ipa",
+          "size": 3879428,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.6.0",
+          "buildVersion": "1",
+          "date": "2026-11-05",
+          "localizedDescription": "首个 iOS 版本：共用 Rust 核心，服务器中转与加密缓存，分享扩展。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.6.0/Scatter.ipa",
+          "size": 3879034,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "连接你的 Scatter 服务器以同步加密的笔记和文件。"
+        }
+      },
+      "version": "0.8.0",
+      "versionDate": "2026-11-05",
+      "versionDescription": "统一内网/外网地址与账号完整登录界面；测试连接自动固定服务器身份，登录后只读显示绑定信息，切换账号保留原资料库。",
+      "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.8.0/Scatter.ipa",
+      "size": 3967275
+    },
+    {
+      "name": "SendIt",
+      "bundleIdentifier": "com.atsrxl.sendit",
+      "developerName": "atsrxl",
+      "subtitle": "通过分享菜单把文件发送到 NAS（SMB / WebDAV）",
+      "localizedDescription": "在任意 App 中点「分享 → 发送到 NAS」，即可把照片、视频、文件、链接或文字直接上传到你的 NAS。\n\n• 支持 SMB 和 WebDAV\n• 每个服务器可以配置多个目的目录，分享时一键选择\n• 目录不存在时自动创建，重名文件自动加序号\n• 支持 iPhone 和 iPad",
+      "iconURL": "https://raw.githubusercontent.com/atsrxl/sendit/main/altstore/icon.png",
+      "tintColor": "#3A6FF7",
+      "category": "utilities",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "1.0.1",
+          "buildVersion": "2",
+          "date": "2026-11-04",
+          "localizedDescription": "更换应用图标。",
+          "downloadURL": "https://github.com/atsrxL/sendit/releases/download/v1.0.1/SendIt.ipa",
+          "size": 4315155,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1",
+          "date": "2026-11-04",
+          "localizedDescription": "首个版本：分享扩展支持 SMB / WebDAV，多目的目录。",
+          "downloadURL": "https://github.com/atsrxL/sendit/releases/download/v1.0.0/SendIt.ipa",
+          "size": 825142,
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.security.application-groups"
+        ],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "SendIt 需要访问局域网以连接你的 NAS。"
+        }
+      },
+      "version": "1.0.1",
+      "versionDate": "2026-11-04",
+      "versionDescription": "更换应用图标。",
+      "downloadURL": "https://github.com/atsrxL/sendit/releases/download/v1.0.1/SendIt.ipa",
+      "size": 4315155
+    },
+    {
+      "name": "F50 Manager",
+      "bundleIdentifier": "cn.f50.manager.ios",
+      "developerName": "atsrxL",
+      "subtitle": "安全连接，管理你的 F50",
+      "localizedDescription": "原生 SwiftUI 蓝牙管理客户端：设备状态与流量、蜂窝信号、短信、Wi-Fi Host/EoIP 事务、制式/频段设置和重启确认。使用固定设备证书的 TLS 1.3 加密连接，未知数据不伪装为成功。\n\n提供完全离线的演示模式。iOS 首页使用用户主动建立的管理连接，不支持设备现有的多分块公开广播。首版不提供后台常驻或系统切换。\n\n重要：真实 F50 与 iPhone/iPad 蓝牙配对和链路尚未联调。仅预置设备身份 W3MJZCCR，其他设备会被拒绝连接。当前 IPA 未签名，由 AltStore Classic/AltServer 使用你的 Apple ID 重新签名安装；不是 AltStore PAL 公证应用。",
+      "iconURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/F50App/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "tintColor": "00858A",
+      "category": "utilities",
+      "screenshots": {
+        "iphone": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/iphone-demo-dashboard.png",
+            "width": 1206,
+            "height": 2622
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/iphone-demo-messages.png",
+            "width": 1206,
+            "height": 2622
+          },
+          {
+            "imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/iphone-demo-device.png",
+            "width": 1206,
+            "height": 2622
+          }
+        ],
+        "ipad": [
+          {
+            "imageURL": "https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/docs/screenshots/ipad-demo-dashboard.png",
+            "width": 1668,
+            "height": 2420
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "buildVersion": "1",
+          "date": "2026-10-30",
+          "localizedDescription": "首版开发预览。iPhone/iPad 各 31 项测试通过，arm64 Release 构建通过；真实 BLE 联调待完成。",
+          "downloadURL": "https://github.com/atsrxL/F50Manager-iOS/releases/download/v0.1.0/F50Manager-0.1.0-unsigned.ipa",
+          "size": 9223940,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "发现并连接您附近的 F50，通过加密蓝牙读取状态、管理短信和设备设置。"
+        }
+      },
+      "version": "0.1.0",
+      "versionDate": "2026-10-30",
+      "versionDescription": "首版开发预览。iPhone/iPad 各 31 项测试通过，arm64 Release 构建通过；真实 BLE 联调待完成。",
+      "downloadURL": "https://github.com/atsrxL/F50Manager-iOS/releases/download/v0.1.0/F50Manager-0.1.0-unsigned.ipa",
+      "size": 9223940
+    },
+    {
+      "name": "映流",
+      "bundleIdentifier": "dev.flowstream.player.ios",
+      "developerName": "atsrxL",
+      "subtitle": "SMB / WebDAV 网络视频播放器",
+      "localizedDescription": "映流 FlowStream：播放 SMB / WebDAV 上的视频。九区手势、长按调速、横拖预览、上下滑切换、标记、预读、画中画。iPhone / iPad 通用，仅支持 MP4 / MOV / M4V / 3GP。",
+      "iconURL": "https://raw.githubusercontent.com/atsrxL/FlowStream/ios/ipados/ios/FlowStream/Resources/Icons/AppIcon60x60@3x.png",
+      "tintColor": "0A84FF",
+      "category": "entertainment",
+      "version": "0.9.2",
+      "versionDate": "2026-10-29T04:08:38Z",
+      "versionDescription": "映流 iOS / iPadOS 0.9.2\n\n- 每个新视频（包括上下滑切换）都从“宽度适屏”开始，不再沿用上次的适屏模式\n- 下载速度常驻在顶部标题下方，随 HUD 一起显示、隐藏\n- 九宫格手势设置改成手机屏幕图示：每个区域的单击 / 双击 / 长按 / 拖动放在对应位置，点一下即可更换；带“恢复默认”\n- 进度条：手指按住直接拖动，不再需要长按等待；单纯点按不跳转；去掉圆点，白线为已播放、灰线为未播放\n- 左右拖动新增“精细进度调整（±10 秒）”：以当前时间为中心，拖动半个屏幕宽度 = 10 秒，HUD 显示偏移量，松手精确定位\n\n未签名 IPA，需要用 Feather / AltStore / Sideloadly / TrollStore 或自己的证书重签。iPhone 与 iPad 通用，最低 iOS / iPadOS 16。播放器为系统 AVPlayer，仅支持 MP4 / MOV / M4V / 3GP。",
+      "downloadURL": "https://github.com/atsrxL/FlowStream/releases/download/ios-v0.9.2/FlowStream-0.9.2-ios-unsigned.ipa",
+      "size": 837343,
+      "versions": [
+        {
+          "version": "0.9.2",
+          "date": "2026-10-29T04:08:38Z",
+          "localizedDescription": "映流 iOS / iPadOS 0.9.2\n\n- 每个新视频（包括上下滑切换）都从“宽度适屏”开始，不再沿用上次的适屏模式\n- 下载速度常驻在顶部标题下方，随 HUD 一起显示、隐藏\n- 九宫格手势设置改成手机屏幕图示：每个区域的单击 / 双击 / 长按 / 拖动放在对应位置，点一下即可更换；带“恢复默认”\n- 进度条：手指按住直接拖动，不再需要长按等待；单纯点按不跳转；去掉圆点，白线为已播放、灰线为未播放\n- 左右拖动新增“精细进度调整（±10 秒）”：以当前时间为中心，拖动半个屏幕宽度 = 10 秒，HUD 显示偏移量，松手精确定位\n\n未签名 IPA，需要用 Feather / AltStore / Sideloadly / TrollStore 或自己的证书重签。iPhone 与 iPad 通用，最低 iOS / iPadOS 16。播放器为系统 AVPlayer，仅支持 MP4 / MOV / M4V / 3GP。",
+          "downloadURL": "https://github.com/atsrxL/FlowStream/releases/download/ios-v0.9.2/FlowStream-0.9.2-ios-unsigned.ipa",
+          "size": 837343,
+          "minOSVersion": "16.0",
+          "buildVersion": "4"
+        },
+        {
+          "version": "0.9.1",
+          "date": "2026-10-29T03:22:41Z",
+          "localizedDescription": "映流 iOS / iPadOS 0.9.1\n\n- 中文名改为“映流”\n- 添加 SMB 服务器：“共享名”改为“路径”，示例 `/share`；可直接填 `/share/子目录`，不再单独填共享内根目录\n- 标记页可直接删除服务器上的原文件（左滑或长按 → 删除文件，需确认），删除后自动取消标记\n- 新增固定下载地址和 Feather / AltStore 源，便于签名后检查更新\n\n未签名 IPA，需要用 Feather / AltStore / Sideloadly / TrollStore 或自己的证书重签。iPhone 与 iPad 通用，最低 iOS / iPadOS 16。播放器为系统 AVPlayer，仅支持 MP4 / MOV / M4V / 3GP。",
+          "downloadURL": "https://github.com/atsrxL/FlowStream/releases/download/ios-v0.9.1/FlowStream-0.9.1-ios-unsigned.ipa",
+          "size": 800003,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "0.9.0",
+          "date": "2026-10-29T02:53:21Z",
+          "localizedDescription": "映流 FlowStream 的 iOS / iPadOS 首个预发布版，对应 Android 0.9.0 的功能。\n\n**未签名 IPA**：需要用 AltStore / Sideloadly / TrollStore 或自己的证书重签后安装。iPhone 与 iPad 通用，最低 iOS / iPadOS 16，arm64。\n\n### 功能\n- 来源：SMB2/3（AMSMB2 / libsmb2）、WebDAV（Basic / 匿名）\n- 九区手势（单击 / 双击 / 长按 / 横拖可逐区配置）、双指缩放平移、宽度 / 高度 / 原始三种适屏\n- 长按快进 / 快退调速、横拖与进度条长按拖动带缩略图预览、上下滑切换视频、随机播放\n- 标记、删除服务器原文件、下一条预读（磁盘 / 内存）、画中画、触屏锁、黑 / 白 / 跟随系统主题\n\n### 已知限制\n- 播放器为系统 AVPlayer，**仅支持 MP4 / MOV / M4V / 3GP**；MKV、WebM、AVI 无法播放\n- 已在 iPhone 模拟器上通过手势与界面 UI 测试；iPad 与真机尚未验证\n- 会话进度仅保存在内存中\n\n构建方法见 [ios/README.md](https://github.com/atsrxL/FlowStream/blob/ios/ipados/ios/README.md)。",
+          "downloadURL": "https://github.com/atsrxL/FlowStream/releases/download/ios-v0.9.0/FlowStream-0.9.0-ios-unsigned.ipa",
+          "size": 786133,
+          "minOSVersion": "16.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
