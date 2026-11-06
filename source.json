@@ -19,6 +19,15 @@
       "screenshots": [],
       "versions": [
         {
+          "version": "0.9.0",
+          "buildVersion": "8",
+          "date": "2026-11-06",
+          "localizedDescription": "统一账号制与共享核心行为；升级仅保留已验证且已登录的 0.8.0 账号资料库，需要时请重新登录。改进内外网故障切换、下载进度与取消、剪贴板去重；分享扩展支持后台或关闭主应用后暂存，由核心校验并原子导入。",
+          "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.9.0/Scatter.ipa",
+          "size": 4814424,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.8.0",
           "buildVersion": "7",
           "date": "2026-11-05",
@@ -90,11 +99,11 @@
           "NSLocalNetworkUsageDescription": "连接你的 Scatter 服务器以同步加密的笔记和文件。"
         }
       },
-      "version": "0.8.0",
-      "versionDate": "2026-11-05",
-      "versionDescription": "统一内网/外网地址与账号完整登录界面；测试连接自动固定服务器身份，登录后只读显示绑定信息，切换账号保留原资料库。",
-      "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.8.0/Scatter.ipa",
-      "size": 3967275
+      "version": "0.9.0",
+      "versionDate": "2026-11-06",
+      "versionDescription": "统一账号制与共享核心行为；升级仅保留已验证且已登录的 0.8.0 账号资料库，需要时请重新登录。改进内外网故障切换、下载进度与取消、剪贴板去重；分享扩展支持后台或关闭主应用后暂存，由核心校验并原子导入。",
+      "downloadURL": "https://github.com/atsrxL/scatter-altstore/releases/download/v0.9.0/Scatter.ipa",
+      "size": 4814424
     },
     {
       "name": "SendIt",
