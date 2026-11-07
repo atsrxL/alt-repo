@@ -10,15 +10,20 @@ SOURCES = [
     'https://raw.githubusercontent.com/atsrxL/F50Manager-iOS/main/altstore.json',
     'https://github.com/atsrxL/FlowStream/releases/download/ios-latest/source.json',
 ]
+# Apps whose source repository is private: metadata lives here, IPAs on this repo's releases.
+LOCAL_APPS = sorted((ROOT / 'apps').glob('*/app.json'))
 
 
 def main():
     apps = []
     identifiers = set()
+    sources = []
     for url in SOURCES:
         request = urllib.request.Request(url, headers={'User-Agent': 'atsrxl-alt-repo'})
         with urllib.request.urlopen(request, timeout=60) as response:
-            source = json.load(response)
+            sources.append(json.load(response))
+    sources += [{'apps': [json.loads(path.read_text())]} for path in LOCAL_APPS]
+    for source in sources:
         for app in source['apps']:
             identifier = app['bundleIdentifier']
             if identifier in identifiers:
@@ -39,7 +44,7 @@ def main():
         'name': 'atsrxL Apps',
         'identifier': 'com.atsrxl.altrepo',
         'subtitle': '个人 iOS / iPadOS 应用合集',
-        'description': 'Scatter、SendIt、F50 Manager 与映流 FlowStream 的统一公开分发源。',
+        'description': 'Scatter、SendIt、F50 Manager、映流 FlowStream 与 Pi VNC 的统一公开分发源。',
         'website': 'https://github.com/atsrxL/alt-repo',
         'iconURL': 'https://raw.githubusercontent.com/atsrxL/scatter-altstore/main/altstore/icon.png',
         'tintColor': '7564CF',
