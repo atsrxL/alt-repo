@@ -263,7 +263,7 @@
       "bundleIdentifier": "dev.atsrxl.pi-vnc",
       "developerName": "atsrxL",
       "subtitle": "iPad mini 原生 PiKVM 远程控制",
-      "localizedDescription": "为 iPad mini 7 设计的原生 PiKVM 客户端（UIKit，无 WebView）。\n\n• 原生 Direct H.264 硬件解码与 MJPEG，H.264 不可用时自动回退\n• 竖屏：顶部状态栏，下方全宽视频；横屏：左侧加速/滚轮条，中间 16:9 画面兼触控板，右侧状态卡片、摇杆和左/中/右键\n• 底部常驻全宽六行 PC 键盘；启动时自动连接已保存的 PiKVM\n• 中间触控板：单指移动 / 轻点左键，双指右键，长按拖拽；左侧按住 2× 加速；右侧独立滚动栏\n• 全屏模式：隐藏键盘与控件，整个屏幕当触控板，适合外接蓝牙键盘\n• 修饰键单击半锁定、双击锁定；支持外接键盘\n• 密码保存在本机钥匙串，自签名 HTTPS 需显式允许\n\n仅 iPad，iPadOS 18+。需要 PiKVM 的 Direct H.264（kvmd-media）接口才能使用 H.264。未签名 IPA，需自行重签安装。",
+      "localizedDescription": "为 iPad mini 7 设计的原生 PiKVM 客户端（UIKit，无 WebView）。\n\n• 原生 Direct H.264 硬件解码与 MJPEG，H.264 不可用时自动回退\n• 顶部状态栏，下方全宽视频；底部常驻全宽六行 PC 键盘\n• 中间触控板：单指移动 / 轻点左键，双指右键，长按拖拽；左侧按住 2× 加速；右侧独立滚动栏\n• 修饰键单击半锁定、双击锁定；支持外接键盘\n• 密码保存在本机钥匙串，自签名 HTTPS 需显式允许\n\n仅 iPad，iPadOS 18+。需要 PiKVM 的 Direct H.264（kvmd-media）接口才能使用 H.264。未签名 IPA，需自行重签安装。",
       "iconURL": "https://raw.githubusercontent.com/atsrxL/alt-repo/main/apps/pi-vnc/icon.png",
       "tintColor": "61D1E6",
       "category": "utilities",
@@ -273,51 +273,10 @@
             "imageURL": "https://raw.githubusercontent.com/atsrxL/alt-repo/main/apps/pi-vnc/screenshot-h264.png",
             "width": 1488,
             "height": 2266
-          },
-          {
-            "imageURL": "https://raw.githubusercontent.com/atsrxL/alt-repo/main/apps/pi-vnc/screenshot-landscape.png",
-            "width": 2266,
-            "height": 1488
           }
         ]
       },
       "versions": [
-        {
-          "version": "0.1.6",
-          "buildVersion": "7",
-          "date": "2026-11-09",
-          "localizedDescription": "• 横屏右侧：左 / 中 / 右三个鼠标键移到摇杆下方",
-          "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.6/PiVNC.ipa",
-          "size": 231727,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.1.5",
-          "buildVersion": "6",
-          "date": "2026-11-09",
-          "localizedDescription": "• 新增全屏模式（配合外接蓝牙键盘）：隐藏屏幕键盘和控件，画面铺满，整个屏幕都是触控板\n• 双指上下滑动滚动",
-          "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.5/PiVNC.ipa",
-          "size": 231728,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.1.4",
-          "buildVersion": "5",
-          "date": "2026-11-09",
-          "localizedDescription": "• 横屏：整个画面也是触控板（相对移动，点击在光标当前位置）\n• 横屏右侧新增左键锁、左 / 中 / 右键和摇杆（小红点逻辑，偏移越大越快）",
-          "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.4/PiVNC.ipa",
-          "size": 229836,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.1.3",
-          "buildVersion": "4",
-          "date": "2026-11-09",
-          "localizedDescription": "• 新横屏布局：左侧窄条放 2× 加速和滚轮，中间 16:9 大画面，右侧状态卡片 + 触控板，底部全宽键盘\n• 打开应用或从后台返回时，用已保存的地址和钥匙串密码自动连接",
-          "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.3/PiVNC.ipa",
-          "size": 219178,
-          "minOSVersion": "18.0"
-        },
         {
           "version": "0.1.2",
           "buildVersion": "3",
@@ -334,11 +293,11 @@
           "NSLocalNetworkUsageDescription": "连接局域网中的 PiKVM，接收视频并发送键盘和鼠标操作。"
         }
       },
-      "version": "0.1.6",
-      "versionDate": "2026-11-09",
-      "versionDescription": "• 横屏右侧：左 / 中 / 右三个鼠标键移到摇杆下方",
-      "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.6/PiVNC.ipa",
-      "size": 231727
+      "version": "0.1.2",
+      "versionDate": "2026-11-07",
+      "versionDescription": "• 连接状态与设置单独占顶部一行，视频下移不再被遮挡\n• 触控板左侧新增加速区：按住时指针移动 2×\n• Shift / Ctrl / Alt / Win 单击半锁定（下一个按键后释放），双击锁定，再次单击关闭",
+      "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.2/PiVNC.ipa",
+      "size": 215582
     }
   ],
   "news": []
