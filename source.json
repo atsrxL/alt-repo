@@ -278,15 +278,6 @@
       },
       "versions": [
         {
-          "version": "0.1.7",
-          "buildVersion": "8",
-          "date": "2026-11-10",
-          "localizedDescription": "• 摇杆改为匀速移动，不随推动幅度加速；推到边缘时速度 2×",
-          "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.7/PiVNC.ipa",
-          "size": 231715,
-          "minOSVersion": "18.0"
-        },
-        {
           "version": "0.1.2",
           "buildVersion": "3",
           "date": "2026-11-07",
@@ -302,11 +293,11 @@
           "NSLocalNetworkUsageDescription": "连接局域网中的 PiKVM，接收视频并发送键盘和鼠标操作。"
         }
       },
-      "version": "0.1.7",
-      "versionDate": "2026-11-10",
-      "versionDescription": "• 摇杆改为匀速移动，不随推动幅度加速；推到边缘时速度 2×",
-      "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.7/PiVNC.ipa",
-      "size": 231715
+      "version": "0.1.2",
+      "versionDate": "2026-11-07",
+      "versionDescription": "• 连接状态与设置单独占顶部一行，视频下移不再被遮挡\n• 触控板左侧新增加速区：按住时指针移动 2×\n• Shift / Ctrl / Alt / Win 单击半锁定（下一个按键后释放），双击锁定，再次单击关闭",
+      "downloadURL": "https://github.com/atsrxL/alt-repo/releases/download/pi-vnc-v0.1.2/PiVNC.ipa",
+      "size": 215582
     }
   ],
   "news": []
